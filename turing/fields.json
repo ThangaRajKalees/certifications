@@ -76,7 +76,7 @@
         "load_external_fonts": true,
         "inherited_value": {
           "property_value_paths": {
-            "color": "theme.global_colors.primary_color.color"
+            "color": "theme.global_colors.text_color.color"
           }
         },
         "default": {
@@ -98,7 +98,7 @@
         "load_external_fonts": true,
         "inherited_value": {
           "property_value_paths": {
-            "color": "theme.global_colors.primary_color.color"
+            "color": "theme.global_colors.text_color.color"
           }
         },
         "default": {
@@ -125,7 +125,9 @@
         },
         "default": {},
         "inherited_value": {
-          "default_value_path": "module.body_font"
+          "property_value_paths": {
+            "color": "theme.global_colors.background_color.color"
+          }
         }
       }
     ]
