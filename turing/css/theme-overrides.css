@@ -1,0 +1,76 @@
+{% set container_width = theme.global_layout.max_width ~ 'px' %}
+
+/* 1b. Colors */
+
+{% set text_color = theme.global_colors.text_color.color  %}
+{% set accent_color = theme.global_colors.accent_color.color %}
+{% set brand_color = theme.global_colors.brand_color.color %}
+
+/* 1c. Typography */
+
+{% set heading_font = theme.global_fonts.heading_font %}
+{% set body_font = theme.global_fonts.body_font %}
+
+/* 1g. Site header */
+
+{% set header_footer_bg_color = color(theme.header_footer.header_footer_bg_color) %}
+
+
+.content-wrapper {
+  max-width: {{ container_width }};
+}
+
+html {
+  font-size: {{ body_font.size ~ body_font.size_unit }};
+}
+
+body {
+  color: {{ text_color }};
+  font-family: {{ body_font.font }};
+}
+
+/* Links */
+
+a {
+  color: {{ accent_color }};
+}
+
+a:hover,
+a:focus {
+  color: {{ color_variant(accent_color, -40) }};
+}
+
+a:active {
+  color: {{ color_variant(accent_color, 40) }};
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: {{ heading_font.font }};
+}
+
+/* Body copy */
+
+p,
+ul,
+ol,
+li,
+blockquote {
+  font-family: {{ body_font.font }};
+}
+
+/* Header and footer */
+
+.header {
+  background-color: {{ header_footer_bg_color }};
+}
+
+.footer {
+  background-color: {{ header_footer_bg_color }};
+}
