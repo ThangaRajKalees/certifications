@@ -110,6 +110,27 @@
     ]
   },
   {
+    "label": "Global Layout",
+    "name": "global_layout",
+    "type": "group",
+    "children": [
+      {
+        "label": "Max Width",
+        "name": "max_width",
+        "required" : false,
+        "locked" : false,
+        "display" : "slider",
+        "min" : 240,
+        "max" : 1440,
+        "step" : 8,
+        "type" : "number",
+        "prefix": "",
+        "suffix" : "",
+        "default" : 1280
+      }
+    ]
+  },
+  {
     "label": "Header & Footer",
     "name": "header_footer",
     "type": "group",
