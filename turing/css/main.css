@@ -13,3 +13,10 @@ Non-cosmetic design patterns including grid and layout classes)
 
 {% include './objects/_layout.css' %}
 {% include './objects/_containers-dnd.css' %}
+
+
+/* Google Fonts
+Non-cosmetic design patterns including grid and layout classes)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oxygen:wght@300&display=swap');

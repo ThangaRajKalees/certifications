@@ -1,1 +1,133 @@
-[ ]
+[ 
+  {
+    "label": "Global colors",
+    "name": "global_colors",
+    "type": "group",
+    "children": [
+      {
+        "label": "Text color",
+        "name": "text_color",
+        "type": "color",
+        "visibility": {
+          "hidden_subfields": {
+            "opacity": false
+          }
+        },
+        "default": {
+          "color": "#ffffff"
+        }
+      },
+      {
+        "label": "Accent color",
+        "name": "accent_color",
+        "type": "color",
+        "visibility": {
+          "hidden_subfields": {
+            "opacity": false
+          }
+        },
+        "default": {
+          "color": "#fae16c"
+        }
+      },
+      {
+        "label": "Brand color",
+        "name": "brand_color",
+        "type": "color",
+        "visibility": {
+          "hidden_subfields": {
+            "opacity": false
+          }
+        },
+        "default": {
+          "color": "#1c254a"
+        }
+      },
+      {
+        "label": "Background color",
+        "name": "background_color",
+        "type": "color",
+        "visibility": {
+          "hidden_subfields": {
+            "opacity": false
+          }
+        },
+        "default": {
+          "color": "#878a98"
+        }
+      }
+    ]
+  },
+  {
+    "label": "Global fonts",
+    "name": "global_fonts",
+    "type": "group",
+    "children": [
+      {
+        "label": "Heading font",
+        "name": "heading_font",
+        "type": "font",
+        "visibility": {
+          "hidden_subfields": {
+            "size": true,
+            "styles": false
+          }
+        },
+        "load_external_fonts": true,
+        "inherited_value": {
+          "property_value_paths": {
+            "color": "theme.global_colors.primary_color.color"
+          }
+        },
+        "default": {
+          "fallback": "sans-serif",
+          "font": "Oxygen",
+          "font_set": "GOOGLE"
+        }
+      },
+      {
+        "label": "Body font",
+        "name": "body_font",
+        "type": "font",
+        "visibility": {
+          "hidden_subfields": {
+            "size": true,
+            "styles": false
+          }
+        },
+        "load_external_fonts": true,
+        "inherited_value": {
+          "property_value_paths": {
+            "color": "theme.global_colors.primary_color.color"
+          }
+        },
+        "default": {
+          "fallback": "serif",
+          "font": "Noto",
+          "font_set": "GOOGLE"
+        }
+      }
+    ]
+  },
+  {
+    "label": "Header & Footer",
+    "name": "header_footer",
+    "type": "group",
+    "children": [
+      {
+        "label": "Header & Footer color",
+        "name": "header_footer_bg_color",
+        "type": "color",
+        "visibility": {
+          "hidden_subfields": {
+            "opacity": false
+          }
+        },
+        "default": {},
+        "inherited_value": {
+          "default_value_path": "module.body_font"
+        }
+      }
+    ]
+  }
+]
