@@ -1,0 +1,17 @@
+{
+  "name": "asite-theme",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "hs watch turing turing --initial-upload",
+    "pull": "hs fetch turing",
+    "push": "hs upload turing turing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:raconteur-clients/asite/asite-hs.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
