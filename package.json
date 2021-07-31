@@ -1,17 +1,33 @@
 {
   "name": "asite-theme",
   "version": "1.0.0",
-  "description": "",
+  "description": "HubSpot CMS for Developers Certification Practicum",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "hs watch turing turing --initial-upload",
     "pull": "hs fetch turing",
-    "push": "hs upload turing turing"
+    "push": "hs upload turing turing",
+    "autoprefixer": "postcss src/css/**/*.css src/modules/**/*.css !src/**/_layout.css !src/**/_normalize.css !src/**/_reset.css !src/**/_macros.css !src/**/main.css !src/**/theme-overrides.css --use autoprefixer --replace --no-map",
+    "eslint": "eslint src",
+    "lint": "eslint src && prettier --list-different 'src/**/*.js' 'src/**/*.json'",
+    "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'"
+  },
+  "devDependencies": {
+    "@hubspot/cms-cli": "^2.2.0",
+    "autoprefixer": "^9.0.0",
+    "eslint": "^7.9.0",
+    "js-yaml": "^3.14.0",
+    "postcss-cli": "^7.0.0",
+    "prettier": "^2.1.2"
   },
   "repository": {
     "type": "git",
     "url": "git@gitlab.com:raconteur-clients/asite/asite-hs.git"
   },
-  "author": "",
-  "license": "ISC"
+  "browserslist": [
+    "defaults",
+    "IE 11"
+  ],
+  "author": "Nicola Giulia Pernice <nicola@alan-agency.com>",
+  "license": "MIT"
 }
