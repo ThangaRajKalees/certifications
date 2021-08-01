@@ -5,6 +5,7 @@
 {% set text_color = theme.global_colors.text_color.color  %}
 {% set accent_color = theme.global_colors.accent_color.color %}
 {% set brand_color = theme.global_colors.brand_color.color %}
+{% set background_color = theme.global_colors.background_color.color %}
 
 /* 1c. Typography */
 
@@ -13,15 +14,17 @@
 
 /* 1g. Site header */
 
-{% set header_footer_bg_color = color(theme.header_footer.header_footer_bg_color) %}
+{% set header_footer_bg_color = theme.global_colors.header_footer_bg_color.color %}
 
 
 .content-wrapper {
   max-width: {{ container_width }};
+  padding: 2rem 1rem;
 }
 
 html {
   font-size: {{ body_font.size ~ body_font.size_unit }};
+  background-color: {{ background_color }}
 }
 
 body {
@@ -53,6 +56,7 @@ h4,
 h5,
 h6 {
   font-family: {{ heading_font.font }};
+  font-weight: 300;
 }
 
 /* Body copy */

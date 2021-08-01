@@ -2,3 +2,11 @@
   templateType: global_partial
   label: Header
 -->
+<header class="header">
+  <div class="header__container content-wrapper">
+    <div class="header__logo header__logo--main">
+      {% if page_meta.html_title %}<h1 class="site-title">{{ page_meta.html_title }}</h1>{% endif %}
+    </div>
+    <p>{% module 'subtitle' path='@hubspot/rich_text' %}</p>
+  </div>
+</header>

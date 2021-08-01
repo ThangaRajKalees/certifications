@@ -20,3 +20,33 @@ Non-cosmetic design patterns including grid and layout classes)
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oxygen:wght@300&display=swap');
+
+/* General Styles
+*/
+
+.body-container-wrapper .content-wrapper .dnd-section .dnd-column {
+  padding: 0;
+}
+
+.body-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main-content {
+  flex: 1;
+}
+
+.site-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header {
+  padding-top: 3rem;
+}
+
+a {
+  font-weight: bold;
+}

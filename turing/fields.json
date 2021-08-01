@@ -14,7 +14,7 @@
           }
         },
         "default": {
-          "color": "#ffffff"
+          "color": "#2F363D"
         }
       },
       {
@@ -27,7 +27,7 @@
           }
         },
         "default": {
-          "color": "#fae16c"
+          "color": "#CB74C8"
         }
       },
       {
@@ -40,7 +40,7 @@
           }
         },
         "default": {
-          "color": "#1c254a"
+          "color": "#FFB13C"
         }
       },
       {
@@ -53,7 +53,20 @@
           }
         },
         "default": {
-          "color": "#878a98"
+          "color": "#F0F0F0"
+        }
+      },
+      {
+        "label": "Header & Footer color",
+        "name": "header_footer_bg_color",
+        "type": "color",
+        "visibility": {
+          "hidden_subfields": {
+            "opacity": false
+          }
+        },
+        "default": {
+          "color": "#CDD1D5"
         }
       }
     ]
@@ -127,29 +140,6 @@
         "prefix": "",
         "suffix" : "",
         "default" : 1280
-      }
-    ]
-  },
-  {
-    "label": "Header & Footer",
-    "name": "header_footer",
-    "type": "group",
-    "children": [
-      {
-        "label": "Header & Footer color",
-        "name": "header_footer_bg_color",
-        "type": "color",
-        "visibility": {
-          "hidden_subfields": {
-            "opacity": false
-          }
-        },
-        "default": {},
-        "inherited_value": {
-          "property_value_paths": {
-            "color": "theme.global_colors.background_color.color"
-          }
-        }
       }
     ]
   }
