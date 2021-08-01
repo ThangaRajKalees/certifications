@@ -117,6 +117,8 @@
         "default": {
           "fallback": "serif",
           "font": "Noto",
+          "size" : 18,
+          "size_unit" : "px",
           "font_set": "GOOGLE"
         }
       }

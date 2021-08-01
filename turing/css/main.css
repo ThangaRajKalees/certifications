@@ -19,7 +19,7 @@ Non-cosmetic design patterns including grid and layout classes)
 Non-cosmetic design patterns including grid and layout classes)
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oxygen:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oxygen:wght@300&display=swap'); */
 
 /* General Styles
 */
@@ -49,4 +49,8 @@ Non-cosmetic design patterns including grid and layout classes)
 
 a {
   font-weight: bold;
+}
+
+img {
+  max-width: 100%;
 }

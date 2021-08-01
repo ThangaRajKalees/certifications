@@ -6,3 +6,7 @@
 .feat_two_col.img-right {
   flex-direction: row-reverse; 
 }
+
+img {
+  max-width: 100%;
+}

@@ -1,0 +1,38 @@
+[ {
+  "id" : "4502904c-92a2-48ab-d7be-32934708b1b9",
+  "name" : "quote",
+  "label" : "Quote",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 100,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "30984535-c9a1-f3bd-8e25-6ed2e3ff6e8e",
+    "name" : "quote_text",
+    "label" : "Quote Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "f013cf2e-7968-a7e2-9b74-a3e37a1ef293",
+    "name" : "quote_source",
+    "label" : "Quote Source",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "type" : "group",
+  "default" : [ { } ]
+} ]

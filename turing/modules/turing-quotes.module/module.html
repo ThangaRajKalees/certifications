@@ -1,0 +1,4 @@
+{% for item in module.quote %}
+	{% inline_text field="quote_text" value="{{ item.quote_text }}" %}
+	{% inline_text field="quote_source" value="{{ item.quote_source }}" %}
+{% endfor %}
