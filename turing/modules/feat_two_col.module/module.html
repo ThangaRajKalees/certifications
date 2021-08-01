@@ -1,0 +1,17 @@
+<div class="feat_two_col {{ module.image_alignment }}">
+  <div class="col">
+   {% if module.feat_quote_image.src %}
+	{% set sizeAttrs = 'width="{{ module.feat_quote_image.width }}" height="{{ module.feat_quote_image.height }}"' %}
+	{% if module.feat_quote_image.size_type == 'auto' %}
+		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+	{% elif module.feat_quote_image.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.feat_quote_image.max_width }}" height="{{ module.feat_quote_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.feat_quote_image.loading != 'disabled' ? 'loading="{{ module.feat_quote_image.loading }}"' : '' %}
+	<img src="{{ module.feat_quote_image.src }}" alt="{{ module.feat_quote_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+  </div>
+  <div class="col">
+    {% inline_rich_text field="feat_quote_text" value="{{ module.feat_quote_text }}" %}
+  </div>
+</div> 

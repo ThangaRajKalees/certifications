@@ -1,0 +1,8 @@
+.feat_two_col {
+  display: flex;
+  flex-direction: row;
+}
+
+.feat_two_col.img-right {
+  flex-direction: row-reverse; 
+}

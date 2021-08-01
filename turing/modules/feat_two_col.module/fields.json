@@ -1,0 +1,40 @@
+[ {
+  "id" : "bde05028-9fb8-c4f8-969d-149e8fadb40e",
+  "name" : "feat_quote_image",
+  "label" : "quote_image",
+  "help_text" : "Select an art image to accompany the quote",
+  "required" : true,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent-eu1.net/hubfs/24916104/il_570xN.2022561421_d1rv.jpg",
+    "alt" : "il_570xN.2022561421_d1rv",
+    "loading" : "lazy",
+    "width" : 570,
+    "height" : 806,
+    "max_width" : 570,
+    "max_height" : 806
+  }
+}, {
+  "id" : "f795af4c-9671-3b1f-cf2f-54a3b82d8f39",
+  "name" : "feat_quote_text",
+  "label" : "Quote Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<blockquote>\n<p><span>Mathematical reasoning may be regarded rather schematically as the exercise of a combination of two facilities, which we may call intuition and ingenuity.</span></p>\n</blockquote>\n<p><span><strong>Alan Turing</strong>&nbsp;<em>(Systems of Logic Based on Ordinals, 1939)</em></span></p>"
+}, {
+  "id" : "5f3b92fd-7d25-2cdc-0eb4-22a9e7b1f1dd",
+  "name" : "image_alignment",
+  "label" : "Image Alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "img-left", "Image Left" ], [ "img-right", "Image Right" ] ],
+  "type" : "choice",
+  "default" : "img-right"
+} ]
