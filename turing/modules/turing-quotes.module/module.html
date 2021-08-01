@@ -1,4 +1,12 @@
+<div class="quote_wapper content-wrapper">
 {% for item in module.quote %}
-	{% inline_text field="quote_text" value="{{ item.quote_text }}" %}
-	{% inline_text field="quote_source" value="{{ item.quote_source }}" %}
+  <figure class="quote">
+    <div class="quote-inner">
+      <blockquote>
+        <h3 class="quote_text">{% inline_text field="quote_text" value="{{ item.quote_text }}" %}</h3>
+      </blockquote>
+      <p class="quote_source">{% inline_text field="quote_source" value="{{ item.quote_source }}" %}</p>
+    </div>
+  </figure>
 {% endfor %}
+</div>

@@ -19,7 +19,7 @@
 
 .content-wrapper {
   max-width: {{ container_width }};
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
 
 html {
@@ -30,6 +30,7 @@ html {
 body {
   color: {{ text_color }};
   font-family: {{ body_font.font }};
+  line-height: 1.5;
 }
 
 /* Links */
@@ -57,6 +58,7 @@ h5,
 h6 {
   font-family: {{ heading_font.font }};
   font-weight: 300;
+  line-height: 1.5;
 }
 
 /* Body copy */
@@ -78,3 +80,5 @@ blockquote {
 .footer {
   background-color: {{ header_footer_bg_color }};
 }
+
+

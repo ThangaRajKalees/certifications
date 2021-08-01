@@ -24,7 +24,7 @@
       {% endblock header %}
 
       <main id="main-content" class="body-container-wrapper ">
-        {% dnd_area 'dnd_area' class='content-wrapper body-container--contact', label='Main section' %}
+        {% dnd_area 'dnd_area' class='content-wrapper', label='Main section' %}
           {% dnd_section %}
             {% dnd_column width="4" %}
               {% dnd_row %}
@@ -47,6 +47,7 @@
             {% end_dnd_column %}
           {% end_dnd_section %}
         {% end_dnd_area %}
+        {% module '43066334968' path='../modules/turing-quotes' %}
       </main>
       {% block footer %}
         {% global_partial path='./partials/footer.html' %}
