@@ -31,19 +31,6 @@
         }
       },
       {
-        "label": "Brand color",
-        "name": "brand_color",
-        "type": "color",
-        "visibility": {
-          "hidden_subfields": {
-            "opacity": false
-          }
-        },
-        "default": {
-          "color": "#FFB13C"
-        }
-      },
-      {
         "label": "Background color",
         "name": "background_color",
         "type": "color",
@@ -58,6 +45,19 @@
       },
       {
         "label": "Header & Footer color",
+        "name": "header_footer_color",
+        "type": "color",
+        "visibility": {
+          "hidden_subfields": {
+            "opacity": false
+          }
+        },
+        "default": {
+          "color": "#2F363D"
+        }
+      },
+      {
+        "label": "Header & Footer background color",
         "name": "header_footer_bg_color",
         "type": "color",
         "visibility": {
@@ -66,7 +66,7 @@
           }
         },
         "default": {
-          "color": "#CDD1D5"
+          "color": "#F0F0F0"
         }
       }
     ]
@@ -117,7 +117,7 @@
         "default": {
           "fallback": "serif",
           "font": "Noto",
-          "size" : 18,
+          "size" : 17,
           "size_unit" : "px",
           "font_set": "GOOGLE"
         }

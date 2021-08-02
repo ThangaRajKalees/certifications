@@ -2,21 +2,25 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-left: calc(1rem - 9px);
-  padding-right: calc(1rem - 9px);
+  padding-left: calc(1rem - .6rem);
+  padding-right: calc(1rem - .6rem);
   padding-top: 0;
-  padding-bottom: 9px;
+  padding-bottom: .6rem;
 }
 
 .quote {
   flex-basis: 100%;
-  padding: 9px;
+  padding: .6rem;
   display: flex;
   margin: 0;
 }
 
+.quote h3 {
+  margin-top: 0;
+}
+
 .quote-inner {
-  padding: 1em 2em;
+  padding: 2em 2em;
   border: 1px solid #ccc;
 }
 
@@ -26,7 +30,13 @@
 
 .quote_source {
   color: #444;
-  font-size: .7em;
+  font-size: var(--step--2);
+}
+
+.quote_source:before {
+  content: '—';
+  display: inline-block;
+  float: left;
 }
 
 @media screen and (min-width: 768px) {

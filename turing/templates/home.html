@@ -24,7 +24,7 @@
       {% endblock header %}
 
       <main id="main-content" class="body-container-wrapper ">
-        {% dnd_area 'dnd_area' class='content-wrapper', label='Main section' %}
+        {% dnd_area 'dnd_area' class='content-wrapper main-feature', label='Main section' %}
           {% dnd_section %}
             {% dnd_column width="4" %}
               {% dnd_row %}
@@ -41,7 +41,7 @@
             {% end_dnd_column %}
             {% dnd_column width="8" offset="4" %}
               {% dnd_row %}
-                {% dnd_module "rich_text" path="@hubspot/rich_text" html="<blockquote><p><span>Mathematical reasoning may be regarded rather schematically as the exercise of a combination of two facilities, which we may call intuition and ingenuity.</span></p></blockquote><p><span><strong>Alan Turing</strong>&nbsp;<em>(Systems of Logic Based on Ordinals, 1939)</em></span></p>" %}
+                {% dnd_module "rich_text" path="@hubspot/rich_text" html="<blockquote><h2><span>Mathematical reasoning may be regarded rather schematically as the exercise of a combination of two facilities, which we may call intuition and ingenuity.</span></h2></blockquote><p><span><strong>Alan Turing</strong>&nbsp;<em>(Systems of Logic Based on Ordinals, 1939)</em></span></p>" %}
                 {% end_dnd_module %}
               {% end_dnd_row %}
             {% end_dnd_column %}

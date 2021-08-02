@@ -4,7 +4,6 @@
 
 {% set text_color = theme.global_colors.text_color.color  %}
 {% set accent_color = theme.global_colors.accent_color.color %}
-{% set brand_color = theme.global_colors.brand_color.color %}
 {% set background_color = theme.global_colors.background_color.color %}
 
 /* 1c. Typography */
@@ -15,6 +14,7 @@
 /* 1g. Site header */
 
 {% set header_footer_bg_color = theme.global_colors.header_footer_bg_color.color %}
+{% set header_footer_color = theme.global_colors.header_footer_color.color %}
 
 
 .content-wrapper {
@@ -73,11 +73,9 @@ blockquote {
 
 /* Header and footer */
 
-.header {
-  background-color: {{ header_footer_bg_color }};
-}
-
-.footer {
+.header,
+.footer  {
+  color: {{ header_footer_color }};
   background-color: {{ header_footer_bg_color }};
 }
 
