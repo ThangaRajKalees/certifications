@@ -3,56 +3,33 @@
   isAvailableForNewContent: true
   label: Home
 -->
-<!doctype html>
-<html lang="{{ html_lang }}" {{ html_lang_dir }}>
-  <head>
-    <meta charset="utf-8">
-    {% if page_meta.html_title %}<title>{{ page_meta.html_title }}</title>{% endif %}
-    {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
-    <meta name="description" content="{{ page_meta.meta_description }}">
-    {% if template_css %}
-      {{ require_css(get_asset_url(template_css)) }}
-    {% endif %}
-    {{ require_css(get_asset_url("../css/main.css")) }}
-    {{ require_css(get_asset_url("../css/theme-overrides.css")) }}
-    {{ standard_header_includes }}
-  </head>
-  <body>
-    <div class="body-wrapper {{ builtin_body_classes }}">
-      {% block header %}
-        {% global_partial path='./partials/header.html' %}
-      {% endblock header %}
+{% extends "./layouts/base.html" %}
 
-      <main id="main-content" class="body-container-wrapper ">
-        {% dnd_area 'dnd_area' class='content-wrapper main-feature', label='Main section' %}
-          {% dnd_section %}
-            {% dnd_column width="4" %}
-              {% dnd_row %}
-              {% dnd_module "linked_image" path="@hubspot/linked_image", img=
-                {  
-                  "src": "https://f.hubspotusercontent-eu1.net/hubfs/24916104/il_570xN.2022561421_d1rv.jpg", 
-                  "alt": "Turing Featured Art", 
-                  "width": 453, 
-                  "height": 640 
-                }
-              %}
-              {% end_dnd_module %}
-              {% end_dnd_row %}
-            {% end_dnd_column %}
-            {% dnd_column width="8" offset="4" %}
-              {% dnd_row %}
-                {% dnd_module "rich_text" path="@hubspot/rich_text" html="<blockquote><h2><span>Mathematical reasoning may be regarded rather schematically as the exercise of a combination of two facilities, which we may call intuition and ingenuity.</span></h2></blockquote><p><span><strong>Alan Turing</strong>&nbsp;<em>(Systems of Logic Based on Ordinals, 1939)</em></span></p>" %}
-                {% end_dnd_module %}
-              {% end_dnd_row %}
-            {% end_dnd_column %}
-          {% end_dnd_section %}
-        {% end_dnd_area %}
-        {% module '43066334968' path='../modules/turing-quotes' %}
-      </main>
-      {% block footer %}
-        {% global_partial path='./partials/footer.html' %}
-      {% endblock footer %}
-    </div>
-    {{ standard_footer_includes }}
-  </body>
-</html>
+{% block body %}
+<main id="main-content" class="body-container-wrapper ">
+  {% dnd_area 'dnd_area' class='content-wrapper main-feature', label='Main section' %}
+    {% dnd_section %}
+      {% dnd_column width="4" %}
+        {% dnd_row %}
+        {% dnd_module "linked_image" path="@hubspot/linked_image", img=
+          {  
+            "src": "https://f.hubspotusercontent-eu1.net/hubfs/24916104/il_570xN.2022561421_d1rv.jpg", 
+            "alt": "Turing Featured Art", 
+            "width": 453, 
+            "height": 640 
+          }
+        %}
+        {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+      {% dnd_column width="8" offset="4" %}
+        {% dnd_row %}
+          {% dnd_module "rich_text" path="@hubspot/rich_text" html="<blockquote><h2><span>Mathematical reasoning may be regarded rather schematically as the exercise of a combination of two facilities, which we may call intuition and ingenuity.</span></h2></blockquote><p><span><strong>Alan Turing</strong>&nbsp;<em>(Systems of Logic Based on Ordinals, 1939)</em></span></p>" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+  {% end_dnd_area %}
+  {% module '43066334968' path='../modules/turing-quotes' %}
+</main>
+{% endblock body %}
