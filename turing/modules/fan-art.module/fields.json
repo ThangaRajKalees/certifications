@@ -1,27 +1,45 @@
 [ {
-  "id" : "5e9e731c-759b-52e2-9ad9-687bffabb2b2",
-  "name" : "artwork",
-  "label" : "Artwork",
+  "id" : "2253abd4-9764-81d3-3593-4cc619998c04",
+  "name" : "art_wall",
+  "label" : "Field group",
   "required" : false,
   "locked" : false,
-  "responsive" : true,
-  "resizable" : true,
-  "show_loading" : false,
-  "type" : "image",
+  "children" : [ {
+    "id" : "5e9e731c-759b-52e2-9ad9-687bffabb2b2",
+    "name" : "artwork",
+    "label" : "Artwork",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "b8dda557-d455-8035-3a6b-6537b63561d4",
+    "name" : "copyright",
+    "label" : "Copyright",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
   "default" : {
-    "size_type" : "auto",
-    "src" : "",
-    "alt" : null,
-    "loading" : "lazy"
+    "artwork" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
   }
-}, {
-  "id" : "b8dda557-d455-8035-3a6b-6537b63561d4",
-  "name" : "copyright",
-  "label" : "Copyright",
-  "required" : false,
-  "locked" : false,
-  "validation_regex" : "",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text"
 } ]

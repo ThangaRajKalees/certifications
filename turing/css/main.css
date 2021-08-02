@@ -70,28 +70,28 @@ Non-cosmetic design patterns including grid and layout classes)
   padding-top: 3rem;
 }
 
-ul.active-branch {
+.active-branch ul {
   list-style: none;
   padding: 0;
   margin-top: 2rem;
   margin-bottom: 0;
 }
 
-ul.active-branch li {
+.active-branch ul li {
   display: inline-block;
 }
 
-ul.active-branch li + li {
+.active-branch ul li + li {
   margin-left: 1em;
 }
 
-ul.active-branch li a {
+.active-branch ul li a {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-ul.active-branch li.active a {
+.active-branch ul li.active a {
   text-decoration: underline;
 }
 
