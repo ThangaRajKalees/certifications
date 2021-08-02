@@ -1,0 +1,32 @@
+.fan-art_wapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: calc(1rem - .6rem);
+  padding-right: calc(1rem - .6rem);
+  padding-top: 0;
+  padding-bottom: .6rem;
+}
+
+.fan-art {
+  flex-basis: 100%;
+  padding: .6rem;
+  display: flex;
+  margin: 0;
+}
+
+.fan-art img {
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .fan-art {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .fan-art {
+    flex-basis: 33%;
+  }
+}

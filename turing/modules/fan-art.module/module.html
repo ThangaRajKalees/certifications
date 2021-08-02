@@ -1,0 +1,17 @@
+<div class="fan-art_wapper content-wrapper">
+{% for item in module.art_wall %}
+	{% if item.artwork.src %}
+		{% set sizeAttrs = 'width="{{ item.artwork.width }}" height="{{ item.artwork.height }}"' %}
+		{% if item.artwork.size_type == 'auto' %}
+			{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+		{% elif item.artwork.size_type == 'auto_custom_max' %}
+			{% set sizeAttrs = 'width="{{ item.artwork.max_width }}" height="{{ item.artwork.max_height }}" style="max-width: 100%; height: auto;"' %}
+		{% endif %}
+		 {% set loadingAttr = item.artwork.loading != 'disabled' ? 'loading="{{ item.artwork.loading }}"' : '' %}
+     <figure class="fan-art">
+	      <img src="{{ item.artwork.src }}" alt="{{ item.artwork.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        <figcaption>{% inline_text field="copyright" value="{{ item.copyright }}" %}</figcaption>
+     </figure>
+	{% endif %}
+{% endfor %}
+</div>
