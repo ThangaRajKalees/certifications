@@ -70,6 +70,32 @@ Non-cosmetic design patterns including grid and layout classes)
   padding-top: 3rem;
 }
 
+ul.active-branch {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+ul.active-branch li {
+  display: inline-block;
+}
+
+ul.active-branch li + li {
+  margin-left: 1em;
+}
+
+ul.active-branch li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+ul.active-branch li.active a {
+  text-decoration: underline;
+}
+
+
 .footer p {
   font-size: var(--step--1);
 }
